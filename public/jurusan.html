@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../src/style.css">
+</head>
+
+<body class="bg-slate-950">
+    <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 px-7 transition-all ease-in-out  mx-2"
+        id="myNav">
+        <div>
+            <img src="./src/assets/Batman-Logo.png" alt="Logo" class="h-8 cursor-pointer">
+        </div>
+        <div class="hidden md:flex md:items-center md:space-x-4">
+            <a href="#" class="text-white">Info Jurusan</a>
+            <a href="./jualan.html" class="text-white">jualan</a>
+            <a href="./index.html" class="text-white">Home</a>
+        </div>
+        <div class="md:hidden">
+            <button id="menuBtn" class="text-white focus:outline-none z-[100]">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div id="mobileMenu"
+        class="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 hidden md:hidden z-30 transition-all">
+        <div
+            class="h-screen w-1/2 bg-gradient-to-b from-stone-50 to-stone-200 opacity-90 transform translate-x-full transition duration-300 ease-in-out">
+            <ul class="flex flex-col items-start p-4 space-y-4 py-16">
+                <li><a href="#" class="text-gray-800 hover:text-violet-600">Home</a></li>
+                <li><a href="#" class="text-gray-800 hover:text-violet-600">Info Jurusan</a></li>
+                <li><a href="./src/web/catalog/index.html" class="text-gray-800 hover:text-violet-600">Catalog</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bg-cover bg-center h-screen " id="myHero" style="background-image: url(../src/images/headr2.png)">
+        <div class="flex flex-col items-center justify-center h-full text-white text-center">
+            <h1 class="text-4xl font-bold mb-4 mx-2 drop-shadow-lg font-heading tracking-wide">Jurusan TI MAWAR
+            </h1>
+            <p class="text-lg mx-2 sm:mx-0 drop-shadow-lg text-center px-16">
+                <span
+                    class="before:block before:absolute before:-inset-1 before:-skew-y-1 before:bg-violet-600 relative inline-block hover:before:skew-y-1 hover:before:transition hover:before:duration-150 hover:before:ease-in-out">
+                    <span class="relative text-white font-heading "> ada apa aja sih di teknologi Informasi
+                        <span class="font-bold">MAWAR</span></span>
+            </p>
+        </div>
+    </div>
+
+
+
+    <div class="md:container sm:my-24 mx-auto md:px-6 bg-slate-900">
+        <div class="flex justify-center ">
+            <div class="text-center md:max-w-xl lg:max-w-3xl mt-4">
+                <h2 class="mb-12 px-6 text-3xl font-bold text-slate-50">Materi Singkat anak TI</h2>
+            </div>
+        </div>
+        <div class="flex flex-wrap">
+            <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+                <div
+                    class="block rounded-lg bg-neutral-700 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                    <a href="#!">
+                        <img class="rounded-t-lg w-1/2 mx-auto" src="./../src/images/logos/excel.png" alt="" />
+                    </a>
+                    <div class=" bg-gradient-to-t from-violet-500 to-neutral-700 opacity-75    ">
+                        <div class="p-6">
+                            <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-50 dark:text-neutral-50">
+                                Microsoft Excel
+                            </h5>
+                            <div class="w-auto h-[82px] overflow-hidden  min-h-0">
+                                <p class="mb-4 text-base text-neutral-200 dark:text-neutral-200 ">
+                                    Excel adalah program spreadsheet yang dikembangkan oleh Microsoft. Ini adalah alat
+                                    yang
+                                    sangat populer digunakan untuk mengorganisir, menghitung, menganalisis, dan
+                                    memvisualisasikan data secara efisien.
+
+                                </p>
+                            </div>
+                            <button type="button" data-te-toggle="modal" data-te-target="#MsExcel" data-te-ripple-init
+                                data-te-ripple-color="light"
+                                class="mt-2 inline-block rounded bg-purple-800 px-6 pb-2 pt-2.5 text-xs font-medium
+                                uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition
+                                duration-150 ease-in-out hover:bg-violet-600
+                                hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]
+                                focus:bg-violet-600
+                                focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]
+                                focus:outline-none focus:ring-0 active:bg-violet-700
+                                active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]
+                                dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)]
+                                dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]
+                                dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]
+                                dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]" data-te-ripple-init
+                                data-te-ripple-color="light" data-te-toggle="modal" data-te-target="#MsExcel"
+                                data-te-ripple-init data-te-ripple-color="light">
+                                Learn More
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div data-te-modal-init
+                class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+                id="MsExcel" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
+                <div data-te-modal-dialog-ref
+                    class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[0px]:m-0 min-[0px]:h-full min-[0px]:max-w-none">
+                    <div
+                        class="pointer-events-auto relative flex w-full flex-col rounded-md bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600 min-[0px]:h-full min-[0px]:rounded-none min-[0px]:border-0">
+                        <div
+                            class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50 min-[0px]:rounded-none">
+                            <!-- Modal title -->
+                            <h5 class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200"
+                                id="exampleModalFullscreenLabel">
+                                Microsoft Excel
+                            </h5>
+                            <!-- Close button -->
+                            <button type="button"
+                                class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+                                data-te-modal-dismiss aria-label="Close">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="relative p-4 min-[0px]:overflow-y-auto font-sans font-normal">
+                            <p class="px-10 text-center leading-[2rem]">
+
+                                Excel adalah program spreadsheet yang dikembangkan oleh Microsoft. Ini adalah alat yang
+                                sangat populer digunakan untuk mengorganisir, menghitung, menganalisis, dan
+                                memvisualisasikan data secara efisien.</p>
+                            <p class="px-10 text-center leading-[2rem]">
+
+
+                                Dalam Excel, data disimpan dalam lembar kerja yang terdiri dari sel-sel dalam baris dan
+                                kolom. Setiap sel dapat berisi teks, angka, formula matematika, atau fungsi yang dapat
+                                digunakan untuk melakukan perhitungan atau manipulasi data.
+
+
+                            </p>
+                            <p class="px-10 text-center leading-[2rem]">
+
+                                Excel menyediakan berbagai fitur dan fungsi yang kuat, seperti pengaturan format sel,
+                                pengurutan dan penyaringan data, grafik, tabel pivot, validasi data, serta kemampuan
+                                untuk menggabungkan data dari berbagai sumber melalui impor dan konektivitas eksternal.
+
+
+                            </p>
+                            <p class="px-10 text-center leading-[2rem]">
+
+
+                                Selain itu, Excel juga mendukung otomatisasi tugas dengan menggunakan macro dan VBA
+                                (Visual Basic for Applications), yang memungkinkan pengguna untuk membuat prosedur atau
+                                fungsi kustom.
+
+                                Excel digunakan secara luas di berbagai bidang, seperti keuangan, akuntansi, manajemen
+                                proyek, penelitian, analisis data, dan banyak lagi. Ini adalah alat yang serbaguna dan
+                                fleksibel yang membantu pengguna untuk bekerja dengan data dalam cara yang terstruktur,
+                                efisien, dan terorganisir.
+                            </p>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div
+                            class="mt-auto flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50 min-[0px]:rounded-none">
+                            <button type="button"
+                                class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+                                data-te-modal-dismiss>
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 h-auto p-4">
+                <div
+                    class="block rounded-lg bg-neutral-700 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                    <a href="#!">
+                        <img class="rounded-t-lg w-1/2 mx-auto" src="./../src/images/logos/word.png" alt="" />
+                    </a>
+                    <div class=" bg-gradient-to-t from-violet-500 to-neutral-700 opacity-75    ">
+                        <div class="p-6">
+                            <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-50 dark:text-neutral-50">
+                                Microsoft Word
+                            </h5>
+                            <div class="w-auto h-[82px] overflow-hidden  min-h-0">
+                                <p class="mb-4 text-base text-neutral-200 dark:text-neutral-200 ">
+                                    Microsoft Word adalah program pengolah kata yang dikembangkan oleh perusahaan
+                                    Microsoft.
+                                    Ini
+                                    adalah salah satu aplikasi pemrosesan kata yang paling populer yang digunakan di
+                                    seluruh
+                                    dunia. Microsoft Word memungkinkan pengguna untuk membuat, mengedit, dan memformat
+                                    dokumen
+                                    teks dengan berbagai fitur yang lengkap.
+                                </p>
+                            </div>
+                            <button type="button" data-te-toggle="modal" data-te-target="#MsWord" data-te-ripple-init
+                                data-te-ripple-color="light"
+                                class="mt-2 inline-block rounded bg-purple-800 px-6 pb-2 pt-2.5 text-xs font-medium
+                                uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition
+                                duration-150 ease-in-out hover:bg-violet-600
+                                hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]
+                                focus:bg-violet-600
+                                focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]
+                                focus:outline-none focus:ring-0 active:bg-violet-700
+                                active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]
+                                dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)]
+                                dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]
+                                dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]
+                                dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]" data-te-ripple-init
+                                data-te-ripple-color="light" data-te-toggle="modal" data-te-target="#MsWord"
+                                data-te-ripple-init data-te-ripple-color="light">
+                                Learn More
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div data-te-modal-init
+                class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+                id="MsWord" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
+                <div data-te-modal-dialog-ref
+                    class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[0px]:m-0 min-[0px]:h-full min-[0px]:max-w-none">
+                    <div
+                        class="pointer-events-auto relative flex w-full flex-col rounded-md bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600 min-[0px]:h-full min-[0px]:rounded-none min-[0px]:border-0">
+                        <div
+                            class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50 min-[0px]:rounded-none">
+                            <!-- Modal title -->
+                            <h5 class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200"
+                                id="exampleModalFullscreenLabel">
+                                Microsoft Word
+                            </h5>
+                            <!-- Close button -->
+                            <button type="button"
+                                class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+                                data-te-modal-dismiss aria-label="Close">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="relative p-4 min-[0px]:overflow-y-auto font-sans font-normal">
+                            <p class="px-10 text-center leading-[2rem]">
+
+                                Microsoft Word adalah program pengolah kata yang dikembangkan oleh perusahaan Microsoft.
+                                Ini adalah salah satu aplikasi pemrosesan kata yang paling populer yang digunakan di
+                                seluruh dunia. Microsoft Word memungkinkan pengguna untuk membuat, mengedit, dan
+                                memformat dokumen teks dengan berbagai fitur yang lengkap.</p>
+                            <p class="px-10 text-center leading-[2rem]">
+
+
+                                Dalam Microsoft Word, pengguna dapat membuat dokumen seperti surat, laporan, makalah,
+                                dan banyak lagi. Program ini menawarkan berbagai alat dan fitur yang memudahkan pengguna
+                                dalam mengatur tata letak, menambahkan gambar, tabel, grafik, serta mengatur gaya dan
+                                format teks. Microsoft Word juga menyediakan pemeriksaan ejaan dan tata bahasa, serta
+                                fitur kolaborasi yang memungkinkan beberapa pengguna bekerja secara bersamaan pada
+                                dokumen yang sama.
+
+
+                            </p>
+                            <p class="px-10 text-center leading-[2rem]">
+
+
+                                Selain itu, Microsoft Word mendukung penyimpanan dokumen dalam format yang berbeda
+                                seperti .doc, .docx, .pdf, dan lainnya, sehingga memungkinkan pengguna untuk berbagi dan
+                                mengirim dokumen dengan mudah ke orang lain. Program ini telah menjadi standar industri
+                                dalam pengolahan kata dan terus diperbarui dengan fitur-fitur baru untuk meningkatkan
+                                produktivitas dan kreativitas pengguna.
+
+
+                            </p>
+                            <p class="px-10 text-center leading-[2rem]">
+
+
+                                Secara keseluruhan, Microsoft Word adalah alat yang sangat berguna untuk mengelola
+                                dokumen teks dan menyediakan berbagai fitur yang membantu dalam pembuatan dan pengeditan
+                                dokumen dengan tampilan profesional.
+                            </p>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div
+                            class="mt-auto flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50 min-[0px]:rounded-none">
+                            <button type="button"
+                                class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+                                data-te-modal-dismiss>
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 p-4 ">
+                <div
+                    class="block rounded-lg bg-neutral-700 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                    <a href="#!">
+                        <img class="rounded-t-lg w-1/2 mx-auto" src="./../src/images/logos/PowerPoint.png" alt="" />
+                    </a>
+                    <div class=" bg-gradient-to-t from-violet-500 to-neutral-700 opacity-75    ">
+                        <div class="p-6">
+                            <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-50 dark:text-neutral-50 ">
+                                Microsoft Power Point
+                            </h5>
+                            <div class="w-auto h-[82px] overflow-hidden  min-h-0">
+                                <p class="mb-4 text-base text-neutral-200 dark:text-neutral-200">
+                                    Microsoft PowerPoint adalah salah satu perangkat lunak presentasi yang paling
+                                    populer di
+                                    dunia. PowerPoint memungkinkan pengguna untuk membuat dan menyajikan slide
+                                    presentasi
+                                    yang
+                                    menarik dan informatif. Dengan menggunakan PowerPoint, pengguna dapat membuat slide
+                                    dengan
+                                    teks, gambar, grafik, tabel, video, dan elemen multimedia lainnya untuk membantu
+                                    menyampaikan pesan dengan cara yang efektif.
+                                </p>
+                            </div>
+                            <button type="button" data-te-toggle="modal" data-te-target="#powerpoint"
+                                data-te-ripple-init data-te-ripple-color="light"
+                                class="mt-2 inline-block rounded bg-purple-800 px-6 pb-2 pt-2.5 text-xs font-medium
+                                uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition
+                                duration-150 ease-in-out hover:bg-violet-600
+                                hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]
+                                focus:bg-violet-600
+                                focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]
+                                focus:outline-none focus:ring-0 active:bg-violet-700
+                                active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]
+                                dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)]
+                                dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]
+                                dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]
+                                dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]" data-te-ripple-init
+                                data-te-ripple-color="light" data-te-toggle="modal" data-te-target="#powerpoint"
+                                data-te-ripple-init data-te-ripple-color="light">
+                                Learn More
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div data-te-modal-init
+                class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+                id="powerpoint" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
+                <div data-te-modal-dialog-ref
+                    class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[0px]:m-0 min-[0px]:h-full min-[0px]:max-w-none">
+                    <div
+                        class="pointer-events-auto relative flex w-full flex-col rounded-md bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600 min-[0px]:h-full min-[0px]:rounded-none min-[0px]:border-0">
+                        <div
+                            class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50 min-[0px]:rounded-none">
+                            <!-- Modal title -->
+                            <h5 class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200"
+                                id="exampleModalFullscreenLabel">
+                                Microsoft Power Point
+                            </h5>
+                            <!-- Close button -->
+                            <button type="button"
+                                class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+                                data-te-modal-dismiss aria-label="Close">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="relative p-4 min-[0px]:overflow-y-auto font-sans font-normal">
+                            <p class="px-10 text-center leading-[2rem]">
+
+                                Microsoft PowerPoint adalah salah satu perangkat lunak presentasi yang paling populer di
+                                dunia. PowerPoint memungkinkan pengguna untuk membuat dan menyajikan slide presentasi
+                                yang menarik dan informatif. Dengan menggunakan PowerPoint, pengguna dapat membuat slide
+                                dengan teks, gambar, grafik, tabel, video, dan elemen multimedia lainnya untuk membantu
+                                menyampaikan pesan dengan cara yang efektif.</p>
+                            <p class="px-10 text-center leading-[2rem]">
+
+
+                                PowerPoint menyediakan berbagai fitur dan alat untuk mendesain tata letak slide, memilih
+                                tema atau template yang sesuai, menambahkan efek transisi dan animasi, serta mengatur
+                                tampilan dan durasi slide. Pengguna juga dapat menggunakan alat untuk menyusun
+                                presentasi secara terstruktur, menggunakan penomoran slide, menambahkan catatan, dan
+                                mengatur tampilan tampilan pengaturan cetak.
+
+
+                            </p>
+                            <p class="px-10 text-center leading-[2rem]">
+
+
+                                PowerPoint juga memungkinkan pengguna untuk menyajikan presentasi mereka secara langsung
+                                menggunakan mode presentasi. Mode ini memungkinkan pengguna untuk mengontrol tampilan
+                                slide, menjelajahi slide dengan cepat, dan menambahkan catatan atau penjelasan tambahan
+                                selama presentasi. PowerPoint juga memiliki fitur kolaborasi yang memungkinkan beberapa
+                                pengguna bekerja bersama dalam waktu nyata pada presentasi yang sama.
+
+
+                            </p>
+                            <p class="px-10 text-center leading-[2rem]">
+
+
+                                Secara keseluruhan, PowerPoint merupakan alat yang kuat dan serbaguna untuk membuat,
+                                menyusun, dan menyajikan presentasi dengan profesional. Dengan fitur-fitur yang lengkap,
+                                pengguna dapat menciptakan presentasi yang menarik dan efektif untuk berbagai keperluan,
+                                seperti presentasi bisnis, pendidikan, seminar, dan banyak lagi.
+                            </p>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div
+                            class="mt-auto flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50 min-[0px]:rounded-none">
+                            <button type="button"
+                                class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+                                data-te-modal-dismiss>
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2 lg:w-1/3 p-4 ">
+                <div
+                    class="block rounded-lg bg-neutral-700 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                    <a href="#!">
+                        <img class="rounded-t-lg w-1/2 mx-auto" src="./../src/images/logos/bootstrap.png" alt="" />
+                    </a>
+                    <div class=" bg-gradient-to-t from-violet-500 to-neutral-700 opacity-75    ">
+                        <div class="p-6">
+                            <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-50 dark:text-neutral-50 ">
+                                Desain Web
+                            </h5>
+                            <div class="w-auto h-[82px] overflow-hidden  min-h-0">
+                                <p class="mb-4 text-base text-neutral-200 dark:text-neutral-200">
+                                    Materi desain web mencakup berbagai aspek penting dalam menciptakan tampilan visual
+                                    dan fungsionalitas yang baik pada sebuah situs web. Pertama, dalam desain web, kita
+                                    perlu memperhatikan tipe-tipe desain yang sesuai dengan kebutuhan, seperti desain
+                                    responsif, desain berbasis grid, dan desain minimalis. Tipe desain ini membantu kita
+                                    menciptakan situs web yang dapat menyesuaikan tampilan dengan perangkat yang
+                                    digunakan, menggunakan tata letak yang terstruktur, dan memiliki kesederhanaan yang
+                                    menarik.
+                                </p>
+                            </div>
+                            <button type="button" data-te-toggle="modal" data-te-target="#DsnWeb" data-te-ripple-init
+                                data-te-ripple-color="light"
+                                class="mt-2 inline-block rounded bg-purple-800 px-6 pb-2 pt-2.5 text-xs font-medium
+                                uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition
+                                duration-150 ease-in-out hover:bg-violet-600
+                                hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]
+                                focus:bg-violet-600
+                                focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]
+                                focus:outline-none focus:ring-0 active:bg-violet-700
+                                active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]
+                                dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)]
+                                dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]
+                                dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]
+                                dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]" data-te-ripple-init
+                                data-te-ripple-color="light" data-te-toggle="modal" data-te-target="#DsnWeb"
+                                data-te-ripple-init data-te-ripple-color="light">
+                                Learn More
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div data-te-modal-init
+                class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+                id="DsnWeb" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
+                <div data-te-modal-dialog-ref
+                    class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[0px]:m-0 min-[0px]:h-full min-[0px]:max-w-none">
+                    <div
+                        class="pointer-events-auto relative flex w-full flex-col rounded-md bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600 min-[0px]:h-full min-[0px]:rounded-none min-[0px]:border-0">
+                        <div
+                            class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50 min-[0px]:rounded-none">
+                            <!-- Modal title -->
+                            <h5 class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200"
+                                id="exampleModalFullscreenLabel">
+                                Desain Web
+                            </h5>
+                            <!-- Close button -->
+                            <button type="button"
+                                class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+                                data-te-modal-dismiss aria-label="Close">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="relative p-4 min-[0px]:overflow-y-auto font-sans font-normal">
+                            <p class="px-10 text-center leading-[2rem]">
+                                Materi desain web mencakup berbagai aspek penting dalam menciptakan tampilan visual dan
+                                fungsionalitas yang baik pada sebuah situs web. Pertama, dalam desain web, kita perlu
+                                memperhatikan tipe-tipe desain yang sesuai dengan kebutuhan, seperti desain responsif,
+                                desain berbasis grid, dan desain minimalis. Tipe desain ini membantu kita menciptakan
+                                situs web yang dapat menyesuaikan tampilan dengan perangkat yang digunakan, menggunakan
+                                tata letak yang terstruktur, dan memiliki kesederhanaan yang menarik.</p>
+                            <p class="px-10 text-center leading-[2rem]">
+
+
+                                Selanjutnya, pemilihan tipografi dan penggunaan warna yang tepat juga merupakan elemen
+                                penting dalam desain web. Pemilihan font yang sesuai dan pengaturan ukuran dan jarak
+                                antar huruf dan paragraf membantu meningkatkan legibilitas dan keindahan tampilan situs
+                                web. Penggunaan warna yang baik mencakup harmoni warna, kontras yang cukup, dan
+                                pemilihan warna yang konsisten dengan branding atau tema yang diinginkan.
+                            </p>
+                            <p class="px-10 text-center leading-[2rem]">
+
+
+                                Terakhir, desain web juga melibatkan penggunaan grafik, visual, dan animasi yang
+                                relevan. Gambar, ikon, dan ilustrasi yang dipilih dengan cermat dapat memberikan dampak
+                                besar pada desain web. Penggunaan animasi dan interaktivitas seperti efek transisi,
+                                tombol hover, dan efek paralaks dapat memberikan pengalaman yang menarik bagi pengguna.
+                                Selain itu, desain responsif dan mobile-friendly menjadi semakin penting mengingat
+                                banyaknya pengguna yang mengakses situs web melalui perangkat mobile.
+                            </p>
+                            <p class="px-10 text-center leading-[2rem]">
+
+
+                                Dengan memperhatikan semua aspek ini, desain web yang baik menggabungkan estetika visual
+                                yang menarik, fungsionalitas yang baik, dan pengalaman pengguna yang positif. Dalam
+                                mengembangkan sebuah situs web, penting bagi desainer web untuk memperhatikan semua
+                                elemen ini guna menciptakan situs web yang menarik, mudah digunakan, dan memberikan
+                                pengalaman yang memuaskan bagi pengguna.
+                            </p>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div
+                            class="mt-auto flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50 min-[0px]:rounded-none">
+                            <button type="button"
+                                class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+                                data-te-modal-dismiss>
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2 lg:w-1/3 p-4 ">
+                <div
+                    class="block rounded-lg bg-neutral-700 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                    <a href="#!">
+                        <img class="rounded-t-lg w-full h-40" src="./../src/images/logos/Wordpress_logo.webp" alt="" />
+                    </a>
+                    <div class=" bg-gradient-to-t from-violet-500 to-neutral-700 opacity-75    ">
+                        <div class="p-6">
+                            <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-50 dark:text-neutral-50 ">
+                                Pengembangan Web Berbasis CMS
+                            </h5>
+                            <div class="w-auto h-[82px] overflow-hidden  min-h-0">
+                                <p class="mb-4 text-base text-neutral-200 dark:text-neutral-200">
+                                    Sebuah website berbasis CMS (Content Management System) adalah sebuah situs web yang
+                                    dibangun dengan menggunakan platform CMS. CMS adalah perangkat lunak yang
+                                    memungkinkan pengguna untuk membuat, mengelola, dan mempublikasikan konten di situs
+                                    web tanpa memerlukan pemrograman atau pengetahuan teknis yang mendalam.
+                                </p>
+                            </div>
+                            <button type="button" data-te-toggle="modal" data-te-target="#CMS" data-te-ripple-init
+                                data-te-ripple-color="light"
+                                class="mt-2 inline-block rounded bg-purple-800 px-6 pb-2 pt-2.5 text-xs font-medium
+                                uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition
+                                duration-150 ease-in-out hover:bg-violet-600
+                                hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]
+                                focus:bg-violet-600
+                                focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]
+                                focus:outline-none focus:ring-0 active:bg-violet-700
+                                active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]
+                                dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)]
+                                dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]
+                                dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]
+                                dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]" data-te-ripple-init
+                                data-te-ripple-color="light" data-te-toggle="modal" data-te-target="#CMS"
+                                data-te-ripple-init data-te-ripple-color="light">
+                                Learn More
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div data-te-modal-init
+                class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+                id="CMS" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
+                <div data-te-modal-dialog-ref
+                    class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[0px]:m-0 min-[0px]:h-full min-[0px]:max-w-none">
+                    <div
+                        class="pointer-events-auto relative flex w-full flex-col rounded-md bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600 min-[0px]:h-full min-[0px]:rounded-none min-[0px]:border-0">
+                        <div
+                            class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50 min-[0px]:rounded-none">
+                            <!-- Modal title -->
+                            <h5 class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200"
+                                id="exampleModalFullscreenLabel">
+                                Pengembangan Web Berbasis CMS
+                            </h5>
+                            <!-- Close button -->
+                            <button type="button"
+                                class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+                                data-te-modal-dismiss aria-label="Close">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="relative p-4 min-[0px]:overflow-y-auto">
+                            <p class="px-10 text-center leading-[2rem]">
+                                Sebuah website berbasis CMS (Content Management System) adalah sebuah situs web yang
+                                dibangun dengan menggunakan platform CMS. CMS adalah perangkat lunak yang memungkinkan
+                                pengguna untuk membuat, mengelola, dan mempublikasikan konten di situs web tanpa
+                                memerlukan pemrograman atau pengetahuan teknis yang mendalam.
+                            </p>
+                            <p>Berikut adalah penjelasan singkat tentang website berbasis CMS:</p>
+                            <ol class="list-decimal ml-2 ">
+                                <li>Platform CMS: Platform CMS seperti WordPress, Joomla, Drupal, atau Magento
+                                    menyediakan kerangka kerja untuk membangun dan mengelola situs web. Platform ini
+                                    biasanya open-source, yang berarti mereka tersedia secara gratis dan memiliki
+                                    komunitas pengembang yang besar.</li>
+                                <li>Pengelolaan Konten: Dalam CMS, pengguna dapat mengelola konten situs web melalui
+                                    antarmuka yang intuitif dan user-friendly. Ini termasuk membuat dan mempublikasikan
+                                    artikel, mengelola halaman, mengunggah gambar dan video, dan mengatur struktur
+                                    navigasi situs.</li>
+                                <li>Fungsionalitas Ekstensi: CMS sering kali mendukung ekstensi atau plugin yang
+                                    memperluas fungsionalitas situs web. Pengguna dapat menginstal dan mengaktifkan
+                                    plugin untuk menambahkan fitur seperti formulir kontak, sistem e-commerce, analitik,
+                                    integrasi media sosial, dan banyak lagi.</li>
+                                <li>Manajemen Pengguna: CMS umumnya memiliki sistem manajemen pengguna yang memungkinkan
+                                    penggunaan peran dan izin. Pengguna dapat diberikan akses yang terbatas berdasarkan
+                                    peran mereka, seperti administrator, editor, atau pengguna terdaftar.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div
+                            class="mt-auto flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50 min-[0px]:rounded-none">
+                            <button type="button"
+                                class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+                                data-te-modal-dismiss>
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 p-4 ">
+                <div
+                    class="block rounded-lg bg-neutral-700 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                    <a href="#!">
+                        <img class="rounded-t-lg w-full h-40" src="./../src/images/logos/MySQL.png" alt="" />
+                    </a>
+                    <div class=" bg-gradient-to-t from-violet-500 to-neutral-700 opacity-75    ">
+                        <div class="p-6">
+                            <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-50 dark:text-neutral-50 ">
+                                Pengolahan DataBase MySql
+                            </h5>
+                            <div class="w-auto h-[82px] overflow-hidden  min-h-0">
+
+                                <p class="mb-4 text-base text-neutral-50 dark:text-neutral-200">
+                                    Sebuah database adalah kumpulan terstruktur dari informasi atau data yang disimpan
+                                    secara elektronik. Database digunakan untuk menyimpan, mengelola, dan mengorganisir
+                                    data
+                                    agar dapat diakses, dikelola, dan diperbarui dengan efisien.
+                                </p>
+                            </div>
+                            <button type="button" data-te-toggle="modal" data-te-target="#MySql" data-te-ripple-init
+                                data-te-ripple-color="light"
+                                class="mt-2 inline-block rounded bg-purple-800 px-6 pb-2 pt-2.5 text-xs font-medium
+                                uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition
+                                duration-150 ease-in-out hover:bg-violet-600
+                                hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]
+                                focus:bg-violet-600
+                                focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]
+                                focus:outline-none focus:ring-0 active:bg-violet-700
+                                active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]
+                                dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)]
+                                dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]
+                                dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]
+                                dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]" data-te-ripple-init
+                                data-te-ripple-color="light" data-te-toggle="modal" data-te-target="#MySql"
+                                data-te-ripple-init data-te-ripple-color="light">
+                                Learn More
+
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-te-modal-init
+                class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+                id="MySql" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
+                <div data-te-modal-dialog-ref
+                    class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[0px]:m-0 min-[0px]:h-full min-[0px]:max-w-none">
+                    <div
+                        class="pointer-events-auto relative flex w-full flex-col rounded-md bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600 min-[0px]:h-full min-[0px]:rounded-none min-[0px]:border-0">
+                        <div
+                            class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50 min-[0px]:rounded-none">
+                            <!-- Modal title -->
+                            <h5 class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200"
+                                id="exampleModalFullscreenLabel">
+                                Pengolahan DataBase MySql
+                            </h5>
+                            <!-- Close button -->
+                            <button type="button"
+                                class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+                                data-te-modal-dismiss aria-label="Close">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="relative p-4 min-[0px]:overflow-y-auto">
+                            <p class="px-10 text-center leading-[2rem]">
+                                Sebuah database adalah kumpulan terstruktur dari informasi atau data yang disimpan
+                                secara elektronik. Database digunakan untuk menyimpan, mengelola, dan mengorganisir data
+                                agar dapat diakses, dikelola, dan diperbarui dengan efisien.
+                                sedangkan mySql sendiri salah satu sistem manajemen basis data
+                                relasional (RDBMS) yang paling populer dan banyak digunakan di dunia.
+                            </p>
+                            <ol class="list-decimal ml-2 ">
+                                <li>Relasional: MySQL adalah basis data relasional, yang berarti data disimpan dalam
+                                    tabel terstruktur dengan hubungan antar tabel.</li>
+                                <li>Skema: MySQL menggunakan skema yang telah ditentukan sebelumnya untuk mendefinisikan
+                                    struktur dan hubungan antar tabel dalam database. Skema ini mendefinisikan kolom,
+                                    tipe data, dan batasan lainnya untuk setiap tabel.</li>
+                                <li>SQL: MySQL menggunakan SQL (Structured Query Language) sebagai bahasa untuk
+                                    mengelola dan mengakses data. SQL digunakan untuk membuat, mengubah, menghapus, dan
+                                    mengambil data dari tabel MySQL.</li>
+                                <li>Scalability: MySQL dapat diatur dan dioptimalkan untuk skala kecil hingga skala
+                                    besar. Ini mendukung replikasi, partisi, dan fitur lainnya untuk mengelola
+                                    pertumbuhan data yang signifikan.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div
+                            class="mt-auto flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50 min-[0px]:rounded-none">
+                            <button type="button"
+                                class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+                                data-te-modal-dismiss>
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+
+            <div class="flex  justify-center mt-5">
+                <div class="text-center md:max-w-xl lg:max-w-3xl">
+                    <h2 class="mb-4 px-6 text-3xl font-bold text-slate-50">Kehidupan Anak TI</h2>
+                </div>
+            </div>
+            <p class="md:text-center text-left  text-slate-200 md:w-1/2 mx-auto md:px-0 px-2 mb-2">kamu masuk jurusan
+                teknoloi
+                informasi
+                dan
+                bingung
+                mau ngapain
+                aja di
+                jurusan ini?? jadi anak TI itu enak pake banget. tiap hari nonton youtube, kerjanya ngetik ngetik doang,
+                google
+                friendly lagi. bukan hanya ituu, di teknologi informasi sendiri semua anggotanya pada cantik cantik
+                dan
+                ganteng ganteng lhoo apalagi mas ibnu dan mas faza wahhh bahaya poll</p>
+            <p class=" text-slate-200 md:w-1/2 mx-auto font-semibold mb-2">
+                apa ajasihh keuntungan jadi anak TI?
+            </p>
+
+            <div class="flex flex-col">
+                <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                    <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+                        <div class="overflow-hidden">
+                            <table class="min-w-full text-left text-sm font-light text-slate-200">
+                                <thead class="border-b font-medium dark:border-neutral-500">
+                                    <tr>
+                                        <th scope="col" class="px-6 py-4">#</th>
+                                        <th scope="col" class="px-6 py-4">Keuntungan</th>
+                                        <th scope="col" class="px-6 py-4">#</th>
+                                        <th scope="col" class="px-6 py-4">Keuntungan</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b dark:border-neutral-500">
+                                        <td class="whitespace-nowrap px-6 py-4 font-medium">1</td>
+                                        <td class="whitespace-nowrap px-6 py-4">Hidup Full Senyum</td>
+                                        <td class="whitespace-nowrap px-6 py-4">4</td>
+                                        <td class="whitespace-nowrap px-6 py-4">Tugas jadi mudah</td>
+                                    </tr>
+                                    <tr class="border-b dark:border-neutral-500">
+                                        <td class="whitespace-nowrap px-6 py-4 font-medium">2</td>
+                                        <td class="whitespace-nowrap px-6 py-4">masa depan indah</td>
+                                        <td class="whitespace-nowrap px-6 py-4">5</td>
+                                        <td class="whitespace-nowrap px-6 py-4">enggak gaptek</td>
+                                    </tr>
+                                    <tr class="border-b dark:border-neutral-500">
+                                        <td class="whitespace-nowrap px-6 py-4 font-medium">3</td>
+                                        <td class="whitespace-nowrap px-6 py-4">bisa jadi hengker </td>
+                                        <td class="whitespace-nowrap px-6 py-4">6</td>
+                                        <td class="whitespace-nowrap px-6 py-4">keliatan paling terdepan</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>`
+
+        </div>
+
+        <div class="md:container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
+            <div class="flex justify-center">
+                <div class="text-center md:max-w-xl lg:max-w-3xl">
+                    <h2 class="mb-12 px-6 text-3xl font-bold text-slate-50">Pojok Meme</h2>
+                </div>
+            </div>
+
+            <div class="-m-1 flex flex-wrap md:-m-2">
+                <div class="flex w-1/2 flex-wrap">
+                    <div class="w-1/2 p-1 md:p-2">
+                        <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                            src="./../src/images/meme/senku.jpg" />
+                    </div>
+                    <div class="w-1/2 p-1 md:p-2">
+                        <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                            src="./../src/images/meme/wir.jpg" />
+                    </div>
+                    <div class="w-full p-1 md:p-2">
+                        <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                            src="./../src/images/meme/santai.jpg" />
+                    </div>
+                </div>
+                <div class="flex w-1/2 flex-wrap">
+                    <div class="w-full p-1 md:p-2">
+                        <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                            src="./../src/images/meme/samtem.jpg" />
+                    </div>
+                    <div class="w-1/2 p-1 md:p-2">
+                        <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                            src="./../src/images/meme/tweet.jpg" />
+                    </div>
+                    <div class="w-1/2 p-1 md:p-2">
+                        <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                            src="./../src/images/meme/so.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./../src/js/index.js"></script>
+    <script src="./../src/js/tail.js"></script>
+    <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+</body>
+
+</html>

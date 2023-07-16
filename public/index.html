@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../src/style.css">
+    <script src="https://kit.fontawesome.com/3ee4c34081.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="bg-slate-950 overflow-x-hidden">
+    <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 px-7 transition-all ease-in-out  mx-2"
+        id="myNav">
+        <div class="text-white">
+            <i class="fa-solid fa-globe"></i>
+        </div>
+        <div class="hidden md:flex md:items-center md:space-x-4">
+            <a href="./jurusan.html" class="text-white">Info Jurusan</a>
+            <a href="./jualan.html" class="text-white">jualan</a>
+            <a href="#" class="text-white">Home</a>
+        </div>
+        <div class="md:hidden">
+            <button id="menuBtn" class="text-white focus:outline-none z-[100]">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div id="mobileMenu"
+        class="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 hidden md:hidden z-30 transition-all">
+        <div
+            class="h-screen w-1/2 bg-gradient-to-b from-stone-50 to-stone-200 opacity-90 transform translate-x-full transition duration-300 ease-in-out">
+            <ul class="flex flex-col items-start p-4 space-y-4 py-16 ">
+                <li><a href="#" class="text-gray-800 hover:text-violet-600 ">Home</a></li>
+                <li><a href="./jurusan.html" class="text-gray-800 hover:text-violet-600">Info Jurusan</a></li>
+                <li><a href="./jualan.html" class="text-gray-800 hover:text-violet-600">Jualan</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bg-cover bg-center h-screen " id="myHero" style="background-image: url(../src/images/headr.jpg)">
+        <div class="flex flex-col items-center justify-center h-full text-white text-center">
+            <h1 class="text-4xl font-bold mb-4 mx-2 drop-shadow-lg font-heading tracking-wide" id="judul1">Welcome to TI
+                Fest Web
+            </h1>
+            <p class="text-lg mx-2 sm:mx-0 drop-shadow-lg text-center px-16">
+                <span
+                    class="before:block before:absolute before:-inset-1 before:-skew-y-1 before:bg-violet-600 relative inline-block hover:before:skew-y-1 hover:before:transition hover:before:duration-150 hover:before:ease-in-out">
+                    <span class="relative text-white font-heading " id="judul2">cihuy
+                        <span class="font-bold">MAWAR</span></span>
+            </p>
+        </div>
+    </div>
+
+    <div class="md:container sm:my-24 mx-auto md:px-6 bg-slate-900">
+
+
+        <div class="flex flex-wrap justify-center text-center p-8">
+            <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2" id="gambarmark">
+                <img src="./../src/images/main.png" alt="Gambar" class="w-full h-auto rounded-sm ">
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 md:mt-0 mt-4 align-middle flex justify-center items-center ">
+                <div class="flex flex-col items-center overflow-x-hidden" id="tulisanmark">
+                    <p class="sm:text-lg mx-2 text-base text-center w-full md:ml-12 text-white">
+                        "Jelajahi revolusi
+                        digital
+                        dan
+                        ciptakan
+                        inovasi
+                        dengan
+                        Jurusan
+                        Teknik
+                        Informatika
+                        (TI). Pelajari pemrograman, dan jaringan komputer untuk merancang masa depan
+                        teknologi yang canggih. Bergabunglah dengan kami dan ikuti jejak para pemikir digital yang telah
+                        merevolusi dunia!"</p><a href="./jurusan.html">
+
+                        <button type="button" data-te-ripple-init data-te-ripple-color="light"
+                            data-te-ripple-radius="25"
+                            class="shadow-[0_4px_9px_-4px_#c4b5fd] transition duration-150 ease-in-out  hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-violet-600-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-violet-700-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 mt-5 rounded-full  max-w-sm hover:ring-4 ring-violet-400 md:mt-14">
+                            Read More >>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative flex overflow-x-hidden ">
+            <div class="py-12 animate-marquee whitespace-nowrap flex flex-row ">
+                <span class="text-4xl mx-16 w-24"><img class="xs:w-40 filter grayscale hover:grayscale-0 transition-all"
+                        src="./../src/images/logos/excel.png" alt=""></span>
+                <span class="text-4xl mx-16 w-24"><img class="xs:w-40 filter grayscale hover:grayscale-0 transition-all"
+                        src="./../src/images/logos/PowerPoint.png" alt=""></span>
+                <span class="text-4xl mx-16 w-24"><img class="xs:w-40 filter grayscale hover:grayscale-0 transition-all"
+                        src="./../src/images/logos/word.png" alt=""></span>
+                <span class="text-4xl mx-16 w-24"><img class="xs:w-40 filter grayscale hover:grayscale-0 transition-all"
+                        src="./../src/images/logos/PowerPoint.png" alt=""></span>
+                <span class="text-4xl mx-16 w-24"><img class="xs:w-40 filter grayscale hover:grayscale-0 transition-all"
+                        src="./../src/images/logos/word.png" alt=""></span>
+            </div>
+            <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap flex flex-row align-middle ">
+                <span class="text-4xl mx-16 w-24"><img
+                        class="xs:w-40 filter grayscale hover:grayscale-0 transition-all "
+                        src="./../src/images/logos/excel.png" alt=""></span>
+                <span class="text-4xl mx-16 w-24"><img class="xs:w-40 filter grayscale hover:grayscale-0 transition-all"
+                        src="./../src/images/logos/word.png" alt=""></span>
+                <span class="text-4xl mx-16  w-24"><img
+                        class="xs:w-40 filter grayscale hover:grayscale-0 transition-all"
+                        src="./../src/images/logos/excel.png" alt=""></span>
+                <span class="text-4xl mx-16 w-24"><img class="xs:w-40 filter grayscale hover:grayscale-0 transition-all"
+                        src="./../src/images/logos/PowerPoint.png" alt=""></span>
+                <span class="text-4xl mx-16 w-24"><img class="xs:w-40 filter grayscale hover:grayscale-0 transition-all"
+                        src="./../src/images/logos/word.png" alt=""></span>
+            </div>
+        </div>
+
+        <div class="relative flex overflow-x-hidden">
+            <div class="py-12 animate-marquee3 whitespace-nowrap flex flex-row">
+                <span class="text-4xl mx-4 text-white hover:text-violet-500 transition-colors ease-in-out"> TI MA
+                    Mawar</span>
+                <span class="text-4xl mx-4 text-white hover:text-violet-500 transition-colors ease-in-out"> TI MA
+                    Mawar</span>
+                <span class="text-4xl mx-4 text-white hover:text-violet-500 transition-colors ease-in-out"> TI MA
+                    Mawar</span>
+                <span class="text-4xl mx-4 text-white hover:text-violet-500 transition-colors ease-in-out"> TI MA
+                    Mawar</span>
+                <span class="text-4xl mx-4 text-white hover:text-violet-500 transition-colors ease-in-out"> TI MA
+                    Mawar</span>
+            </div>
+            <div class="absolute top-0 py-12 animate-marquee4 whitespace-nowrap flex flex-row">
+                <span class="text-4xl mx-4 text-white hover:text-violet-500 transition-colors ease-in-out"> TI MA
+                    Mawar</span>
+                <span class="text-4xl mx-4 text-white hover:text-violet-500 transition-colors ease-in-out"> TI MA
+                    Mawar</span>
+                <span class="text-4xl mx-4 text-white hover:text-violet-500 transition-colors ease-in-out"> TI MA
+                    Mawar</span>
+                <span class="text-4xl mx-4 text-white hover:text-violet-500 transition-colors ease-in-out"> TI MA
+                    Mawar</span>
+                <span class="text-4xl mx-4 text-white hover:text-violet-500 transition-colors ease-in-out"> TI MA
+                    Mawar</span>
+            </div>
+        </div>
+
+        <div class="relative flex overflow-x-hidden">
+            <div class="py-12 animate-marquee whitespace-nowrap flex flex-row">
+                <span class="text-4xl mx-12 w-44 "><img class="w-44 filter grayscale hover:grayscale-0 transition-all"
+                        src="./../src/images/logos/npm.png" alt=""></span>
+                <span class="text-4xl mx-12 w-44 "><img class="w-44 filter grayscale hover:grayscale-0 transition-all"
+                        src="./../src/images/logos/MySQL.png" alt=""></span>
+                <span class="text-4xl mx-12 w-44 "><img class="w-44 filter grayscale hover:grayscale-0 transition-all"
+                        src="./../src/images/logos/node.png" alt=""></span>
+                <span class="text-4xl mx-12 w-44 "><img class="w-44 filter grayscale hover:grayscale-0 transition-all"
+                        src="./../src/images/logos/mongo.png" alt=""></span>
+                <span class="text-4xl mx-12 w-44 "><img class="w-44 filter grayscale hover:grayscale-0 transition-all"
+                        src="./../src/images/logos/tailwind.png" alt=""></span>
+            </div>
+            <div class="absolute top-0 py-12  animate-marquee2 whitespace-nowrap flex flex-row">
+                <span class="text-4xl mx-12 w-44 "><img class="w-44 filter grayscale hover:grayscale-0 transition-all"
+                        src="./../src/images/logos/npm.png" alt=""></span>
+                <span class="text-4xl mx-12 w-44 "><img class="w-44 filter grayscale hover:grayscale-0 transition-all"
+                        src="./../src/images/logos/MySQL.png" alt=""></span>
+                <span class="text-4xl mx-12 w-44 "><img class="w-44 filter grayscale hover:grayscale-0 transition-all"
+                        src="./../src/images/logos/node.png" alt=""></span>
+                <span class="text-4xl mx-12 w-44 "><img class="w-44 filter grayscale hover:grayscale-0 transition-all"
+                        src="./../src/images/logos/mongo.png" alt=""></span>
+                <span class="text-4xl mx-12 w-44 "><img class="w-44 filter grayscale hover:grayscale-0 transition-all"
+                        src="./../src/images/logos/tailwind.png" alt=""></span>
+            </div>
+        </div>
+        <!-- carousel -->
+        <div id="carouselExampleCaptionsFull" class="relative" data-te-carousel-init data-te-carousel-slide>
+            <div class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+                data-te-carousel-indicators>
+                <button type="button" data-te-target="#carouselExampleCaptionsFull" data-te-slide-to="0"
+                    data-te-carousel-active
+                    class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-te-target="#carouselExampleCaptionsFull" data-te-slide-to="1"
+                    class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-te-target="#carouselExampleCaptionsFull" data-te-slide-to="2"
+                    class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+                <div class="relative float-left -mr-[100%] hidden w-full !transform-none bg-cover bg-center bg-no-repeat opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                    data-te-carousel-fade data-te-carousel-item data-te-carousel-active>
+                    <video class="" playsinline autoplay muted loop>
+                        <source class="" src="https://tecdn.b-cdn.net/img/video/Lines.mp4" type="video/mp4" />
+                    </video>
+                    <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+                        style="background-color: rgba(0, 0, 0, 0.6)">
+                        <div class="flex h-full items-center justify-center">
+                            <div class="px-md-0 px-14 text-center text-white">
+                                <h2 class="mb-4 text-3xl font-semibold">
+                                    Menu Stand Kelas XI.4
+                                </h2>
+                                <h5 class="mb-6 text-lg font-light">
+                                    Dijamin enak
+                                </h5>
+                                <div class="md:space-x-2">
+                                    <a type="button"
+                                        class="inline-block rounded border-2 border-white px-6 py-2 text-xs font-medium uppercase leading-tight text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                                        href="#!" role="button" data-te-ripple-init data-te-ripple-color="light">Read
+                                        more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative float-left -mr-[100%] hidden w-full !transform-none bg-cover bg-center bg-no-repeat opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                    data-te-carousel-fade data-te-carousel-item>
+                    <video class="" playsinline autoplay muted loop>
+                        <source class="" src="https://tecdn.b-cdn.net/img/video/forest.mp4" type="video/mp4" />
+                    </video>
+                    <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+                        style="background-color: rgba(0, 0, 0, 0.3)">
+                        <div class="flex h-full items-center justify-center">
+                            <div class="px-md-0 px-14 text-center text-white">
+                                <h2 class="mb-4 text-3xl font-semibold">
+                                    Teknologi Informasi MA Matholiul Anwar
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative float-left -mr-[100%] hidden w-full !transform-none bg-cover bg-center bg-no-repeat opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                    data-te-carousel-fade data-te-carousel-item>
+                    <video class="" playsinline autoplay muted loop>
+                        <source class="" src="https://tecdn.b-cdn.net/img/video/Tropical.mp4" type="video/mp4" />
+                    </video>
+                    <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed" style="
+                background: linear-gradient(
+                  45deg,
+                  rgba(29, 236, 197, 0.7),
+                  rgba(91, 14, 214, 0.7) 100%
+                );
+              ">
+                        <div class="flex h-full items-center justify-center">
+                            <div class="px-md-0 px-14 text-center text-white">
+                                <h2 class="mb-4 text-3xl font-semibold">
+                                    Cari tahu tentang TI Mawar
+                                </h2>
+                                <a type="button"
+                                    class="inline-block rounded border-2 border-white px-6 py-2 text-xs font-medium uppercase leading-tight text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                                    href="#!" role="button" data-te-ripple-init data-te-ripple-color="light">Learn
+                                    more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button
+                class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                type="button" data-te-target="#carouselExampleCaptionsFull" data-te-slide="prev">
+                <span class="inline-block h-8 w-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>
+                </span>
+                <span
+                    class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+            </button>
+            <button
+                class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                type="button" data-te-target="#carouselExampleCaptionsFull" data-te-slide="next">
+                <span class="inline-block h-8 w-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </span>
+                <span
+                    class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+            </button>
+        </div>
+
+        <!-- Section: Design Block -->
+        <section class="mt-4">
+            <div class="flex justify-center">
+                <div class="text-center md:max-w-xl lg:max-w-3xl">
+                    <h2 class="mb-12 px-6 text-3xl font-bold text-slate-50">Contact us</h2>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap ">
+                <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
+                    <form>
+                        <div class="relative mb-6" data-te-input-wrapper-init>
+                            <input type="text"
+                                class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 text-slate-200"
+                                id="exampleInput90" placeholder="Name" />
+                            <label
+                                class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+                                for="exampleInput90">Name
+                            </label>
+                        </div>
+                        <div class="relative mb-6" data-te-input-wrapper-init>
+                            <input type="email"
+                                class="text-slate-200 peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                                id="exampleInput91" placeholder="Email address" />
+                            <label
+                                class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+                                for="exampleInput91">Email address
+                            </label>
+                        </div>
+                        <div class="relative mb-6" data-te-input-wrapper-init>
+                            <textarea
+                                class="text-slate-200 peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                                id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
+                            <label for="exampleFormControlTextarea1"
+                                class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">Message</label>
+                        </div>
+                        <div class="mb-6 inline-block min-h-[1.5rem] justify-center pl-[1.5rem] md:flex">
+                            <input
+                                class="relative float-left mt-[0.15rem] mr-[6px] -ml-[1.5rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:ml-[0.25rem] checked:after:-mt-px checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-t-0 checked:after:border-l-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:ml-[0.25rem] checked:focus:after:-mt-px checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-t-0 checked:focus:after:border-l-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                                type="checkbox" value="" id="exampleCheck96" checked />
+                            <label class="inline-block pl-[0.15rem] hover:cursor-pointer text-white"
+                                for="exampleCheck96">
+                                Send me a copy of this message
+                            </label>
+                        </div>
+                        <button type="button" data-te-ripple-init data-te-ripple-color="light"
+                            class="mb-6 inline-block w-full rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+                            Send
+                        </button>
+                    </form>
+                </div>
+                <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
+                    <div class="flex flex-wrap">
+                        <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
+                            <div
+                                class="flex items-start bg-slate-600 cursor-pointer p-1 hover:bg-slate-400 transition-all ease-in-out rounded">
+                                <div class="shrink-0">
+                                    <div class="inline-block rounded-md bg-primary-100 p-4 text-xl text-primary ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                            <path
+                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <a href="https://www.instagram.com/pasoepati_class">
+                                    <div class="ml-6 grow">
+                                        <p class="mb-2 font-bold text-white dark:text-white">
+                                            Instagram XI.4
+                                        </p>
+                                        <p class="text-neutral-200 dark:text-neutral-200">
+                                            pasoepati_class
+                                        </p>
+                                        <p class="text-neutral-200 dark:text-neutral-200">
+                                            Follow Kuy
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
+                            <div
+                                class="flex items-start bg-slate-600 p-1 cursor-pointer hover:bg-slate-400 transition-all ease-in-out rounded">
+                                <div class="shrink-0">
+                                    <div class="inline-block rounded-md bg-primary-100 p-4 text-primary text-xl">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                            <path
+                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <a href=" https://www.instagram.com/sainstech_mawar/">
+                                    <div class="ml-6 grow">
+                                        <p class="mb-2 font-bold text-white dark:text-white">
+                                            Instagram SanisTech
+                                        </p>
+                                        <p class="text-neutral-200 dark:text-neutral-200">
+                                            sainstech_mawar
+                                        </p>
+                                        <p class="text-neutral-200 dark:text-neutral-200">
+                                            Follow Kuy
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
+                            <div
+                                class="align-start flex bg-slate-600 p-1 cursor-pointer hover:bg-slate-400 transition-all ease-in-out rounded">
+                                <div class="shrink-0">
+                                    <div class="inline-block rounded-md bg-primary-100 p-4 text-primary text-xl">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                            <path
+                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-6 grow">
+                                    <p class="mb-2 font-bold text-white dark:text-white ">Instagram Mawar</p>
+                                    <p class="text-neutral-200 dark:text-neutral-200">
+                                        MA Matholiul Anwar
+                                    </p>
+                                    <p class="text-neutral-200 dark:text-neutral-200">
+                                        Follow Kuy
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
+                            <div
+                                class="align-start flex bg-slate-600 p-1 cursor-pointer hover:bg-slate-400 transition-all ease-in-out rounded">
+                                <div class="shrink-0">
+                                    <div class="inline-block rounded-md bg-primary-100 p-4 text-black">
+                                        <i class="fa-solid fa-globe"></i>
+                                    </div>
+                                </div>
+                                <a href="https://ppdb.mamawar.sch.id/">
+                                    <div class="ml-6 grow">
+                                        <p class="mb-2 font-bold text-white dark:text-white">Web Mawar</p>
+                                        <p class="text-neutral-200 dark:text-neutral-200">
+                                            Website MA MAWAR
+                                        </p>
+                                        <p class="text-neutral-200 dark:text-neutral-200">
+                                            Boleh Mampir Ke sini
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="w-full h-14 self-end md:mb-0 mb-5 rounded"
+                            style="background-image: url(./../src/images/benner.png); background-size: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section: Design Block -->
+    </div>
+    <!-- Container for demo purpose -->
+
+
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <script src="./../src/js/gsap.js"></script>
+    <script src="./../src/js/index.js"></script>
+    <script src="./../src/js/tail.js"></script>
+    <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+
+
+</body>
+
+</html>
